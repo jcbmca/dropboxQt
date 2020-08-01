@@ -8,19 +8,22 @@ REM *note: usually this script is run from Visual Studio Command Prompt
 
 cd ..\prj
 echo "configuring %cd%"
-qmake -tp vc
+rem qmake -tp vc
+qmake -tp
 
 cd ..\examples
 for /D %%d in (*) do (
         echo "configuring %%d"
         cd "%%d"
-        qmake -tp vc
+rem        qmake -tp vc
+        qmake -tp
         cd ..
 )
 
 cd ..\bin
 
 echo "opening IDE.."
-..\prj\dropboxQt.sln
+rem ..\prj\dropboxQt.sln
+..\prj\dropboxQt.pro
 
 pause

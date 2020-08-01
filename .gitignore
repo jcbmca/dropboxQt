@@ -2,9 +2,43 @@
 *.a
 .qmake.stash
 Makefile
-moc_*.cpp
 examples/authorize/authorize
 examples/boxbash/boxbash
 examples/token.info
 
+*~
+*.autosave
+*.a
+*.core
+*.moc
+*.o
+*.obj
+*.orig
+*.rej
+*.so
+*.so.*
+*_pch.h.cpp
+*_resource.rc
+*.qm
+Makefile*
+*.prl
+*.app
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+*.rc
+/.qmake.cache
+/.qmake.stash
+
+# qtcreator generated files
+*.pro.user*
+# MinGW generated files
+*.Debug
+*.Release
+
+# Binaries
+# --------
+*.dll
+*.exe
 
